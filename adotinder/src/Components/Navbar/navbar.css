@@ -1,0 +1,23 @@
+.navbar-light .navbar-brand {
+    font-weight: 600;
+    color: #FFFDf7;
+}
+
+.navbar-light .navbar-brand:hover {
+    font-weight: 600;
+    color: #FFFDf7;
+}
+
+.nav_geral {
+    background-color: #0A2342;
+    color: #FFFDf7 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFFDf7;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #FFFDf7;
+}

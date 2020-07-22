@@ -1,0 +1,22 @@
+footer {
+    background-color: #0A2342;
+    color: #FFFDF7;
+    font-weight: 400;
+    min-height: 50px;
+}
+
+
+p {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.linkedin {
+    color: #FFFDF7 !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    font-weight: bold;
+
+}

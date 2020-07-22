@@ -1,0 +1,20 @@
+.quero {
+    color: #DE8F6E;
+    background-color: #FFFdf7;
+    text-transform: uppercase;
+    padding: 25px 25px;
+    font-weight: bold;
+    border: 2px solid #DE8F6E;
+    min-width: 298px;
+}
+
+.botao {
+    margin-top: 50px;
+}
+
+.quero:hover {
+    border: 2px solid #FFFdf7;
+    color: #FFFdf7;
+    background-color: #DE8F6E;
+    text-decoration: none;
+}

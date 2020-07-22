@@ -1,0 +1,92 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3vw;
+    padding: 0 25px;
+}
+
+h3 {
+    padding: 0 20px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.quadros{
+    max-width: 500px;
+    min-width: 250px;
+    width: 100%;
+}
+
+.painel_1{
+    background-color: #F46197;
+    color: #FFFDF7;
+    display: flex;
+    flex-direction: row;
+    max-height: 500px;
+    justify-content: space-between;
+}
+
+.imagem1_container {
+    align-self: flex-end;
+    flex-grow: 1;
+}
+
+.textos_1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.painel_2{
+    background-color: #2CA58D;
+    color: #FFFDF7;
+    display: flex;
+    flex-direction: row;
+    max-height: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem2_container {
+    align-self: flex-start;
+    flex-grow: 1;
+}
+
+
+.textos_2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 700px;
+}
+
+article{
+    padding: 70px 80px;
+    background-color: #DE8F6E;
+    color: #FFFDF7;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.texto_quiz {
+    justify-content: center;
+    max-width: 660px;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

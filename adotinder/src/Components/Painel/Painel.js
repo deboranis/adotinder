@@ -1,7 +1,9 @@
+import { Container, Row, Col } from 'reactstrap';
 import './painel.css';
 import React from 'react';
 import Button from '../Button/Button';
 import quadro1 from '../img/quadro1.jpg';
+import quadro2 from '../img/quadro2.jpg';
 
 function Painel() {
     return(
@@ -19,7 +21,7 @@ function Painel() {
             
             <div className="painel_2">
                 <div className="imagem2_container">
-                    <img src={quadro1} alt="imagem pet" className="quadros"></img>
+                    <img src={quadro2} alt="imagem pet" className="quadros"></img>
                 </div>
                 <div className="textos_2">
                     <h2>Aqui você encontra os pets mais próximos de você, que estão aguardando adoção aos cuidados de ONGs e protetores parceiros!</h2>

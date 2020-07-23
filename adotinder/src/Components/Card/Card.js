@@ -1,35 +1,22 @@
-
 import React from 'react';
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
-} from 'reactstrap';
+import './card.css';
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Container } from 'reactstrap';
 
-const CardPet = (nomePet,
-                tipoPet,
-                descPet,
-                pesoPet,
-                idadePet,
-                energiaPet,
-                socialPet) => {
+const CardPet = (props) => {
   return (
-    <div>
-      <Card>
-        <CardImg top width="100%" src="/assets/318x180.svg" alt="Foto do pet" />
+    <Container className="row_card">
+      <Card className="pet_card">
+        <CardImg className="img_card" top width="100%" src={props.pet.imagem} alt="Foto do pet" />
         <CardBody>
-          <CardTitle>{nomePet}</CardTitle>
-          <CardSubtitle>{tipoPet}</CardSubtitle>
-          <CardText>{descPet}</CardText>
-          <ul>
-              <li>{pesoPet}</li>
-              <li>{idadePet}</li>
-              <li>{energiaPet}</li>
-              <li>{socialPet}</li>
-          </ul>
-          <Button>Quero conhecer {nomePet}!</Button>
+          <CardTitle><strong>{props.pet.nome}</strong></CardTitle>
+          <CardSubtitle>{props.pet.especie}, {props.pet.idade}</CardSubtitle>
+          <CardText>{props.pet.sobre}</CardText>
+              <p>{props.pet.peso} <br/> Castrado: {props.pet.castrado} - Vacinado: {props.pet.vacinado} <br/> {props.pet.socializacao} <br/>
+              {props.pet.localizacao}</p>
+          <Button className="botao_card">Quero conhecer {props.pet.nome}!</Button>
         </CardBody>
       </Card>
-    </div>
+      </Container>
   );
 };
 

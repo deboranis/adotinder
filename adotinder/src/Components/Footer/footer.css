@@ -20,3 +20,7 @@ a:hover {
     font-weight: bold;
 
 }
+
+.footer_container{
+    flex: 1;
+}

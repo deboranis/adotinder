@@ -1,5 +1,15 @@
-.sobre {
-    background-color: #DE8F6E;
+.bg_sobre {
+    background-color: #0A2342;
     color: #FFFdf7;
     font-size: large;
+    padding: 50px 50px;
+    display: flex;
+}
+
+.sobre {
+    border: 3px solid #FFFdf7;
+    padding: 30px 20px;
+    margin: 30px 30px;
+    align-items: center;
+    max-width: 500px;
 }

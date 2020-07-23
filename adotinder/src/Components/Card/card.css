@@ -1,0 +1,45 @@
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.row_card {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 400px;
+}
+
+.img_card {
+    max-width: 150px;
+    border: 3px solid #FFFDF7;
+    margin-top: 20px;
+}
+
+.pet_card {
+    max-width: 350px;
+    display: flex;
+    background-color: #F08A4B;
+    color: #FFFDF7;
+    border: 5px solid #FFFDF7;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 15px;
+}
+
+.botao_card {
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border: 3px solid #F08A4B;
+    color: #F08A4B;
+    font-weight: 600;
+    background-color: #FFFDF7;
+}
+
+.botao_card:hover {
+    background-color: #F08A4B;
+    color: #FFFDF7;
+    border: 3px solid #FFFDF7  ;
+}

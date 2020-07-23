@@ -19,7 +19,7 @@ const Header = (props) => {
     <div>
       <Navbar className="nav_geral" light expand="md">
         <NavbarBrand className="nav_text" href="/">Adotinder</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler className="menu" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>

@@ -3,7 +3,7 @@ const pets = [
       "nome": "Spot",
       "especie": "canino",
       "imagem": require('./Components/img/spot.jpg'),
-      "sobre": "Spot é um doguinho muito fofinho e com MUITA energia!",
+      "sobre": "Spot é um doguinho muito fofinho e com MUITA energia! Ele precisa passear pelo menos uma vez por dia.",
       "castrado": "sim",
       "vacinado": "sim",
       "socializacao": "Se dá bem com humanos e outros pets",
@@ -74,7 +74,7 @@ const pets = [
     {
       "nome": "Felícia",
       "especie": "felino",
-      "imagem": require('./Components/img/Felícia.jpg'),
+      "imagem": require('./Components/img/Felícia.jpeg'),
       "sobre": "Felícia é uma gatinha muito serena, curte ficar deitada no sol e é muito comunicativa!",
       "castrado": "sim",
       "vacinado": "sim",
@@ -88,7 +88,62 @@ const pets = [
         ["b"],
         ["d"],
         ["a"]
+      ]},
+    {
+      "nome": "Pouca Sombra",
+      "especie": "felino",
+      "imagem": require('./Components/img/poucasombra.png'),
+      "sobre": "Esse bebezinho foi abandonado junto com seus irmãos. Ele é muito tímido, mas super curioso!",
+      "castrado": "não",
+      "vacinado": "sim",
+      "socializacao": "Se dá bem com humanos e outros animais",
+      "idade": "filhote",
+      "peso": "0.5kg",
+      "localizacao": "São Paulo",
+      "respostasValidas": [
+        ["b"],
+        ["a", "b", "c"],
+        ["a"],
+        ["a", "b", "c", "d"],
+        ["a"]
+      ]},
+    {
+      "nome": "Mary",
+      "especie": "felino",
+      "imagem": require('./Components/img/Mary.png'),
+      "sobre": "Mary é uma gatinha jovem e muito dengosa. Ela gosta de estar em companhia, especialmente de outros gatos.",
+      "castrado": "sim",
+      "vacinado": "não",
+      "socializacao": "Se dá bem com humanos e outros animais",
+      "idade": "1 a 3 anos",
+      "peso": "4kg",
+      "localizacao": "São Paulo",
+      "respostasValidas": [
+        ["b"],
+        ["a", "b", "c"],
+        ["b"],
+        ["a", "b", "c", "d"],
+        ["a"]
+      ]},
+    {
+      "nome": "Caju",
+      "especie": "canino",
+      "imagem": require('./Components/img/caju.png'),
+      "sobre": "Caju é um bebezão que adora humanos, mas não se dá muito bem com outros bichos. Precisa ser filho único.",
+      "castrado": "não",
+      "vacinado": "sim",
+      "socializacao": "Se dá bem com humanos",
+      "idade": "1 a 3 anos",
+      "peso": "8kg",
+      "localizacao": "São Paulo",
+      "respostasValidas": [
+        ["a", "b"],
+        ["a", "b", "c"],
+        ["a"],
+        ["a", "d"],
+        ["a"]
       ]}
+
   ]
 
   export default pets;

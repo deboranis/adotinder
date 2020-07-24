@@ -1,16 +1,7 @@
+/* TITULOS */
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-}
-
-#titulo_1 {
-    font-size: 10vw;
-    line-height: 1.4;
-}
-
-.titulo_2 {
-    font-size: 5vw;
-    line-height: 1.3;
-    padding: 0 25px;
 }
 
 h3 {
@@ -21,24 +12,44 @@ h4 {
     font-size: 24px;
 }
 
+#titulo_1 {
+    font-size: 10vw;
+    line-height: 1.4;
+}
+
+#titulo_2 {
+    font-size: 5vw;
+    line-height: 1.4;
+    padding: 0 25px;
+}
+
+#titulo_3 {
+    justify-content: center;
+    font-size: 6vw;
+    line-height: 1.3;
+}
+
+/* IMGS */
+
 .quadros{
     max-width: 500px;
     min-width: 250px;
     width: 100%;
 }
 
+.imagem2_container {
+    align-self: flex-start;
+    flex-grow: 1;
+}
+
+/* PAINEIS E TEXTOS */
+
 .painel_1{
     background-color: #F46197;
     color: #FFFDF7;
     display: flex;
     flex-direction: column;
-    /* max-height: 500px; */
     /* justify-content: space-between; */
-}
-
-.imagem1_container {
-    align-self: flex-end;
-    flex-grow: 1;
 }
 
 .textos_1{
@@ -60,12 +71,6 @@ h4 {
     align-items: center;
 }
 
-.imagem2_container {
-    align-self: flex-start;
-    flex-grow: 1;
-}
-
-
 .textos_2{
     display: flex;
     flex-direction: column;
@@ -73,10 +78,6 @@ h4 {
     margin: 50px 20px;
     justify-content: center;
     /* flex-grow: 1; */
-}
-
-.titulo_3 {
-    justify-content: center;
 }
 
 .painel_3 {
@@ -91,12 +92,10 @@ h4 {
     margin-bottom: 60px;
 }
 
-.painel_3 h2 {
-    font-size: 6vw;
-    line-height: 1.3;
-}
+/* RESPONSIVIDADE */
 
-@media((min-width: 768px) and (max-width: 1024px))){
+@media (min-width: 768px) and (max-width: 768px)
+{
     .painel_1 {
         display: block;
         padding: 10px 0 0;
@@ -110,7 +109,7 @@ h4 {
         line-height: 1.5
         ;
     }
-    .magem2_container {
+    .imagem2_container {
         min-width: 768px;
     }
     .painel_3 {
@@ -127,7 +126,8 @@ h4 {
     }
     }
 
-    @media(min-width: 1024px){
+    @media (min-width: 1024px) and (max-width: 1024px)
+    {
         .painel_1 {
             display: flex;
             flex-direction: row;
@@ -135,16 +135,16 @@ h4 {
         #titulo_1 {
             font-size: 6vw;
         }
-        .imagem1_container {
-            display: flex;
-            align-self: flex-end;
-        }
         .quadros {
             min-width: 512px;
         }   
-        .titulo_2 {
-            line-height: 1.5
-            ;
+        .painel_2 {
+            display: flex;
+            flex-direction: row;
+        }
+        #titulo_2 {
+            line-height: 1.4;
+            font-size: 3vw;
         }
         .painel_3 {
             padding: 60px 0 50px;
@@ -157,5 +157,36 @@ h4 {
         #titulo_3 {
             line-height: 1.3;
             max-width: 800px;
+            font-size: 3.5vw;
         }
+        }
+
+        @media (min-width: 1280px) {
+            .painel_1 {
+                display: flex;
+                flex-direction: row;
+                max-height: 500px;
+            }
+            #titulo_1 {
+                font-size: 6vw;
+            }
+            .painel_2 {
+                display: flex;
+                flex-direction: row;
+            }
+            .textos_2 {
+                max-width: 680px;
+            }
+            #titulo_2 {
+                font-size: 3vw;
+                padding-right: 80px;
+            }
+            .painel_3 {
+                margin-bottom: 40px;
+            }
+            #titulo_3 {
+                font-size: 3vw;
+                max-width: 800px;
+                margin: 40px 0;
+            }
         }

@@ -8,7 +8,7 @@ const CardPet = (props) => {
       <Card className="pet_card">
         <CardImg className="img_card" top width="100%" src={props.pet.imagem} alt="Foto do pet" />
         <CardBody>
-          <CardTitle><strong>{props.pet.nome}</strong></CardTitle>
+          <CardTitle><h3>{props.pet.nome}</h3></CardTitle>
           <CardSubtitle>{props.pet.especie}, {props.pet.idade}</CardSubtitle>
           <CardText>{props.pet.sobre}</CardText>
               <p>{props.pet.peso} <br/> Castrado: {props.pet.castrado} - Vacinado: {props.pet.vacinado} <br/> {props.pet.socializacao} <br/>

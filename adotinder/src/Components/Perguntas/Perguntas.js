@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { Row, Button } from "reactstrap";
+import { Button } from "reactstrap";
 import './perguntas.css';
 
 const perguntas = [
@@ -63,7 +63,7 @@ function Questionario (props) {
             })
          }
         setContador(contador+1)
-        setResposta([...resposta, item])
+        setResposta([...resposta, item]) 
         if(contador >= perguntas.length-1) {
             history.push({
                 pathname: "/Resultado",

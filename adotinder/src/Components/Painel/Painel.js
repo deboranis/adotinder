@@ -20,7 +20,7 @@ function Painel() {
                     <img src={quadro2} alt="imagem pet" className="quadros"></img>
                 </div>
                 <div className="textos_2">
-                    <h2 className="titulo_2">Aqui você encontra os pets mais próximos de você, que estão aguardando adoção aos cuidados de ONGs e protetores parceiros!</h2>
+                    <h2 id="titulo_2">Aqui você encontra os pets mais próximos de você, que estão aguardando adoção aos cuidados de ONGs e protetores parceiros!</h2>
                 </div>
             </div>
             <article className="painel_3">

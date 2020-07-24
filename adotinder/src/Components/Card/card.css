@@ -20,7 +20,7 @@ li {
 .pet_card {
     max-width: 350px;
     display: flex;
-    min-height: 570px;
+    min-height: 590px;
     background-color: #F08A4B;
     color: #FFFDF7;
     border: 5px solid #FFFDF7;

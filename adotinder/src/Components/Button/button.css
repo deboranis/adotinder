@@ -20,8 +20,21 @@
     text-decoration: none !important;
 }
 
+/* RESPONSIVIDADE */
+
 @media(min-width: 768px){
     .link_quero {
         font-size: 3.5vw;
+    }
+}
+
+@media(min-width: 1024px){
+    .link_quero{
+        font-size: 3vw;
+    }
+}
+@media(min-width: 1280px){
+    .link_quero{
+        font-size: 2vw;
     }
 }

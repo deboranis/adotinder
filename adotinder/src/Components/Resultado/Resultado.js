@@ -1,16 +1,21 @@
 import React from 'react';
 import pets from '../../pets';
 import Card from '../Card/Card';
-import { Container } from 'reactstrap';
 import './resultado.css'
+import { useLocation } from 'react-router-dom';
 
-
-const Resultado = (props) =>{
-
+function Resultado(props) {
+    let location = useLocation();
+    const respostasUsuario = location.state.respostasUsuario;
+    const matches = pets.filter(
+        dog => dog.respostasValidas.every((question, i) => question.includes(respostasUsuario[i]))
+    )
+    console.log(location)
     return(
-        <Container>
-        <h1 className="matches">Aqui estão seus matches!</h1>
-            {pets.map((pet, index) => {
+        <div className="container_matches">
+        <h1 className="titulo_matches">Aqui estão seus matches!</h1>
+        <div className="div_pets">
+            {matches.map((pet, index) => {
                 return (
                 <div key={index}>
                 <Card 
@@ -19,7 +24,8 @@ const Resultado = (props) =>{
                 </div>
                 )
             } )}
-        </Container>
+            </div>
+        </div>
     )
 }
 

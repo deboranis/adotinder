@@ -10,22 +10,24 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Footer from './Components/Footer/Footer';
 import Sobre from './Components/Sobre/Sobre';
-import Perguntas from './Components/Perguntas/Perguntas';
 import Negativa from './Components/Negativa/Negativa';
 import Resultado from './Components/Resultado/Resultado';
 import Switch from 'react-bootstrap/esm/Switch';
+import Questionario from './Components/Perguntas/Perguntas';
 
 ReactDOM.render(
     <BrowserRouter>
-    <Switch>
+    <Switch className="main_container">
       <Navbar />
       <Route exact path="/" render={Home} />
       <Route path="/Sobre" render={Sobre} />
       <Route path="/Perguntas" >
-        <Perguntas />
+        <Questionario />
       </Route>
       <Route path="/Negativa" render={Negativa} />
-      <Route path="/Resultado" render={Resultado} />
+      <Route path="/Resultado">
+      <Resultado />
+      </Route>
       <Footer />
     </Switch>
     </BrowserRouter>,

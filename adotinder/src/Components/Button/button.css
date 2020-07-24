@@ -1,20 +1,27 @@
-.quero {
+.link_quero {
     color: #F08A4B;
     background-color: #FFFdf7;
     text-transform: uppercase;
     padding: 25px 25px;
+    text-decoration: none;
     font-weight: bolder;
     border: 2px solid #F08A4B;
-    min-width: 298px;
+    min-width: 150px;
 }
 
-.botao {
-    margin-top: 50px;
+.btn_quero {
+    margin: 50px 0;
 }
 
-.quero:hover {
+.btn_quero a:hover {
     border: 2px solid #FFFdf7;
     color: #FFFdf7;
     background-color: #F08A4B;
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+@media(min-width: 768px){
+    .link_quero {
+        font-size: 3.5vw;
+    }
 }

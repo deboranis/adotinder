@@ -20,13 +20,14 @@ li {
 .pet_card {
     max-width: 350px;
     display: flex;
+    min-height: 570px;
     background-color: #F08A4B;
     color: #FFFDF7;
     border: 5px solid #FFFDF7;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 15px;
+    margin: 20px 15px; 
 }
 
 .botao_card {
@@ -42,4 +43,9 @@ li {
     background-color: #F08A4B;
     color: #FFFDF7;
     border: 3px solid #FFFDF7  ;
+}
+
+.bg_card{
+    display: flex;
+    flex-wrap: wrap;
 }

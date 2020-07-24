@@ -1,4 +1,3 @@
-
 const pets = [
     {
       "nome": "Spot",
@@ -11,13 +10,13 @@ const pets = [
       "idade": "1 a 3 anos",
       "peso": "18kg",
       "localizacao": "São Paulo",
-      "respostasValidas": {
-        "p1": ["a"],
-        "p2": ["a", "b", "c"],
-        "p3": ["a", "b"],
-        "p4": ["a", "b", "c", "d"],
-        "p5": ["a"]
-      }},
+      "respostasValidas": [
+        ["a"],
+        ["a", "b", "c"],
+        ["a", "b"],
+        ["a", "b", "c", "d"],
+        ["a"]
+      ]},
     {
       "nome": "Arya",
       "especie": "canino",
@@ -29,13 +28,13 @@ const pets = [
       "idade": "4 a 7 anos",
       "peso": "15kg",
       "localizacao": "São Paulo",
-      "respostasValidas": {
-        "p1": ["a", "b"],
-        "p2": ["a", "b", "c"],
-        "p3": ["b"],
-        "p4": ["a", "d"],
-        "p5": ["a"]
-      }},
+      "respostasValidas": [
+        ["a", "b"],
+        ["a", "b", "c"],
+        ["b"],
+        ["a", "d"],
+        ["a"]
+      ]},
     {
       "nome": "Lia",
       "especie": "felino",
@@ -47,13 +46,13 @@ const pets = [
       "idade": "4 a 7 anos",
       "peso": "5kg",
       "localizacao": "São Paulo",
-      "respostasValidas": {
-        "p1": ["b"],
-        "p2": ["a", "b", "c"],
-        "p3": ["b"],
-        "p4": ["a", "d"],
-        "p5": ["a"]
-      }},
+      "respostasValidas": [
+        ["b"],
+        ["a", "b", "c"],
+        ["b"],
+        ["a", "d"],
+        ["a"]
+      ]},
     {
       "nome": "Dax",
       "especie": "canino",
@@ -65,13 +64,13 @@ const pets = [
       "idade": "1 a 3 anos",
       "peso": "10kg",
       "localizacao": "São Paulo",
-      "respostasValidas": {
-        "p1": ["a", "b"],
-        "p2": ["a", "b", "c"],
-        "p3": ["a", "b"],
-        "p4": ["a", "b", "c", "d"],
-        "p5": ["a"]
-      }},
+      "respostasValidas": [
+        ["a", "b"],
+        ["a", "b", "c"],
+        ["a", "b"],
+        ["a", "b", "c", "d"],
+        ["a"]
+      ]},
     {
       "nome": "Felícia",
       "especie": "felino",
@@ -83,13 +82,13 @@ const pets = [
       "idade": "+7 anos",
       "peso": "4kg",
       "localizacao": "São Paulo",
-      "respostasValidas": {
-        "p1": ["b"],
-        "p2": ["a", "b", "c"],
-        "p3": ["b"],
-        "p4": ["d"],
-        "p5": ["a"]
-      }}
+      "respostasValidas": [
+        ["b"],
+        ["a", "b", "c"],
+        ["b"],
+        ["d"],
+        ["a"]
+      ]}
   ]
 
   export default pets;

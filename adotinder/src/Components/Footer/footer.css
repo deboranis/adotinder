@@ -1,14 +1,19 @@
-footer {
+.footer {
     background-color: #0A2342;
     color: #FFFDF7;
     font-weight: 400;
     min-height: 50px;
+    margin-top: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-
-p {
+.p_footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 10px;
+    margin-bottom: 0;
 }
 
 .linkedin {
@@ -16,11 +21,6 @@ p {
     text-decoration: none !important;
 }
 
-a:hover {
+.linkedin:hover {
     font-weight: bold;
-
-}
-
-.footer_container{
-    flex: 1;
 }

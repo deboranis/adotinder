@@ -16,7 +16,7 @@ const Header = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div> 
       <Navbar className="nav_geral" light expand="md">
         <NavbarBrand className="nav_text" href="/">Adotinder</NavbarBrand>
         <NavbarToggler className="menu" onClick={toggle} />

@@ -3,10 +3,8 @@ import './footer.css'
 
 function Footer() {
     return(
-        <div className="footer_container">
-        <footer>
-            <p>Projeto desenvolvido em React para Reprograma - por <a className="linkedin" href="https://www.linkedin.com/in/deboranis" target="blank">Débora Nisenbaum</a></p>
-        </footer>
+        <div className="footer">
+            <p className="p_footer">Projeto desenvolvido em React para Reprograma - por <a className="linkedin" href="https://www.linkedin.com/in/deboranis" target="blank">Débora Nisenbaum</a></p>
         </div>
     )
 }

@@ -23,5 +23,6 @@
 }
 
 .menu {
-    color: #FFFDf7;
+    color: #FFFDf7 !important;
+    background-color: #FFFDf7;
 }

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { useHistory } from "react-router-dom";
+import { Row, Button } from "reactstrap";
+import './perguntas.css';
 
 const perguntas = [
         {
-            pergunta: "O que você esta buscando?",
+            pergunta: "O que você está buscando?",
             alternativas: [
                 {texto: "Um companheiro de aventuras!", item: "a"},
                 {texto: "Uma companhia doméstica", item: "b"}
@@ -40,36 +42,47 @@ const perguntas = [
             {texto: "Sim!", item: "a"},
             {texto: "Eu pretendia fazer uma surpresa...", item: "b"}
         ]
+    },
+    {
+        pergunta: "Pronto para ver seus matches?",
+        alternativas: [
+            {texto: "Sim!", item: "a"}
+        ]
     }
 ]
 
-    let iPerguntas = 0;
-    let qualquerMerda = [];
-
-function Perguntas (props) {
+function Questionario (props) {
+    const history = useHistory();
     const [resposta, setResposta] = useState([]);
+    const [contador, setContador] = useState(0);
     const registraResposta = (item) => {
-        qualquerMerda = [...qualquerMerda, item]
-        if (iPerguntas < perguntas.length) {
-        iPerguntas++} else {
-            setResposta(qualquerMerda)
-            iPerguntas++
+        if((contador===1 && item === "d") || (contador===4 && item ==="b")){
+            history.push({
+            pathname: "/Negativa",
+            state: {respostasUsuario: resposta}
+            })
+         }
+        setContador(contador+1)
+        setResposta([...resposta, item])
+        if(contador >= perguntas.length-1) {
+            history.push({
+                pathname: "/Resultado",
+                state: {respostasUsuario: resposta}
+            });
         }
-        console.log()
-        console.log(qualquerMerda);
     }
+
+
     return (
-      <Container>
-        <div>
-          <h3>{perguntas[iPerguntas].pergunta}</h3>
-        </div>
-        <Row xs="2">
-            {perguntas[iPerguntas].alternativas.map((alternativa) => {
-                return <Col><Button onClick={()=>{registraResposta(alternativa.item)}}>{alternativa.texto}</Button></Col>
+      <div className="container_perguntas">
+          <div className="div_perguntas">
+          <h2 className="titulo_perguntas">{perguntas[contador].pergunta}</h2>
+            {perguntas[contador].alternativas.map((alternativa) => {
+                return <div className="alt_perguntas"><Button className="botao_perguntas" onClick={()=>{registraResposta(alternativa.item)}}>{alternativa.texto}</Button></div>
             })}
-        </Row>
-      </Container>
+        </div>
+      </div>
     );
   
 }
-export default Perguntas;
+export default Questionario;

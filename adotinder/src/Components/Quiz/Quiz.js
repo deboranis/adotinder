@@ -33,28 +33,9 @@ const petsSelecionadosParaFulano = selecionarPets(respostasUsuario, listaPets)
 
 console.log(petsSelecionadosParaFulano)
 
-const perguntas = {
-	perguntaUm: {
-		pergunta: "O que vc esta buscando?",
-		alternativas: [
-			{texto: "lorem", item: "a"},
-			{texto: "lorem", item: "b"}
-		]
-	},
-	perguntaDois: {
-		pergunta: "O que vc esta buscando?",
-		alternativas: [
-			{texto: "lorem", item: "a"},
-			{texto: "lorem", item: "b"},
-			{texto: "lorem", item: "c"}
-		]
-	},
-	perguntaTres: {
-		pergunta: "O que vc esta buscando?",
-		alternativas: [
-			{texto: "lorem", item: "a"},
-			{texto: "lorem", item: "b"}
-		]
-	}
+const selecionarDoguinhos = (escolhas, doguinhos) => doguinhos
+  .filter(dog => dog.respostasValidas.every((question, i) => question.includes(escolhas[i])))
 
-}
+const dogsSelecionadosParaFulano = selecionarDoguinhos(escolhasFulano, listaDoguinhos)
+
+console.log(dogsSelecionadosParaFulano.map(dog => dog.nome))

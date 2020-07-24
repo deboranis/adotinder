@@ -4,7 +4,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Con
 
 const CardPet = (props) => {
   return (
-    <Container className="row_card">
+    <div className="bg_card">
       <Card className="pet_card">
         <CardImg className="img_card" top width="100%" src={props.pet.imagem} alt="Foto do pet" />
         <CardBody>
@@ -16,7 +16,7 @@ const CardPet = (props) => {
           <Button className="botao_card">Quero conhecer {props.pet.nome}!</Button>
         </CardBody>
       </Card>
-      </Container>
+      </div>
   );
 };
 
